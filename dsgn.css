@@ -1,0 +1,241 @@
+/*Reset html&body CSS*/
+html,body{						/*Aplicar em toda a estrutura*/
+	margin: 0;					/*Nenhuma margem*/
+	padding: 0;					/*Nenhum espaçamento*/
+	box-sizing: border-box;		/*Inclui o preenchimento e a borda na largura e na altura*/
+	background: #131521;		/*#131521 como cor de fundo*/
+}
+
+/*Div Container CSS*/
+.cnt{											/*Div do corpo*/
+	display: grid;								/*Tela em grade*/
+	grid-template: 28vh 236vh 21vh / 2fr 1fr;	/*Separação da grade*/
+	grid-template-areas:
+	"h h"
+	"m a"
+	"f f";
+	/*
+	_________________________
+	|       Cabeçalho       |
+	|-----------------------|
+	|     Main      | Aside |
+	|-----------------------|
+	|         Rodapé        |
+	=========================
+	*/
+
+}
+
+/*Header CSS*/
+header{
+	align-self: top;								/*Se alinha ao topo (ordenadas)*/
+	justify-self: center;							/*Se alinha ao centro (abscissas)*/
+	opacity: 0.75;									/*75% de opacidade*/
+	align-items: center;							/*Alinhar elementos internos ao centro (ordenadas)*/
+	background-image: url("Images/Body/hdr.png");	/*Coloca uma imagem de fundo*/
+	background-position: 50% -68%;					/*Desloca a imagem de fundo*/
+	height: 95%;									/*Define a altura como 95% do espaço total*/
+	width: 99.5%;									/*Define a largura como 99.5% do espaço total*/
+	grid-area: h;									/*Nome da área == 'h'*/
+	text-shadow: #000 0px 0px;						/*Nenhuma sombra do texto*/
+}
+header:hover{						/*Se passar o mouse sobre o cabeçalho*/
+	animation-name: apearHeader;	/*Executa a animação 'apearHeader'...*/
+	animation-duration: 2s;			/*...por 2 segundos...*/
+	animation-fill-mode: forwards;	/*...e mantém as alterações após a execução*/
+}
+h1{										/*Texto de 1ª hierarquia*/
+	text-align: center;					/*Alinhamento do texto ao centro*/
+	margin-top: 2%;						/*Margem de 2% da altura total do topo*/
+	color: #000;						/*Texto preto*/
+	font-size: 58px;					/*Fonte tamanho 58*/
+	font-family: "Railway to Hells";	/*Fonte 'Railway to Hells'*/
+}
+
+/*Main CSS*/
+main{												/*Parte principal*/
+	background: #232531;							/*#232531 como cor de fundo*/
+	height: 94%;									/*Define a altura como 94% do espaço total*/
+	width: 100%;									/*Define a largura com o espaço total*/
+	grid-area: m;									/*Nome da área == 'm'*/
+	border-radius: 1%;								/*Arredondamento da borda em 1%*/
+	margin-left: 2%;								/*Margem de 2% da largura total da esquerda*/
+	margin-top: 2%;									/*Margem de 2% da altura total do topo*/
+	color: #000;									/*Texto preto*/
+	font-family: "Railway to Hells";				/*Fonte 'Railway to Hells'*/
+	font-size: 22px;								/*Fonte tamanho 22*/
+	display: grid;									/*Tela em grade*/
+	grid-template: 10% 40% 40% 10%/ 1f 1fr 1fr 1fr;	/*Separação da grade*/
+	grid-template-areas:
+	"mg mg"
+	"st lp"
+	"sg tl"
+	"bt bt";
+	/*
+	_________________________
+	|         Título        |
+	|-----------------------|
+	|   Strato  |  Les Paul |
+	|-----------------------|
+	|     SG    |   Tele    |
+	|-----------------------|
+	|         Botão         |
+	=========================
+	*/
+	text-align: center;								/*Alinhamento do texto ao centro*/
+	justify-items: center;							/*Alinhar elementos internos ao centro (abscissas)*/
+}
+main:hover{							/*Se passar o mouse sobre o main*/
+	animation-name: apearMain;		/*Executa a animação 'apearMain'...*/
+	animation-duration: 1s;			/*...por 1 segundo...*/
+	animation-fill-mode: forwards;	/*...e mantém as alterações após a execução*/
+}
+h2{
+	text-align: center;					/*Alinhamento do texto ao centro*/
+	color: #000;						/*Texto preto*/
+	font-family: "Railway to Hells";	/*Fonte 'Railway to Hells'*/
+	font-size: 36px;					/*Fonte tamanho 36*/
+	grid-area: mg;						/*Nome da área == 'mg'*/
+}
+figure{					/*Figuras*/
+	cursor: pointer;	/*Muda o cursor para clique*/
+	margin-top: -5%;	/*Margem de -5% da altura total do topo*/
+	background: #999;	/*#999999 como cor de fundo*/
+	padding: 2%;		/*2% do tamanho total de espaçamento*/
+	height: 88%;		/*Define a altura como 90% do espaço total*/
+	width: 45%;			/*Define a largura como 45% do espaço total*/
+	border-radius: 2%;	/*Arredondamento da borda em 2%*/
+}
+#st{grid-area: st;}		/*Figura da stratocaster | Nome da área == 'st'*/
+#lp{grid-area: lp;}		/*Figura da les paul | Nome da área == 'lp'*/
+#tl{					/*Figura da telecaster*/
+	grid-area: tl;		/*Nome da área == 'tl'*/
+	margin-top: -10%;	/*Margem de -10% da altura total do topo*/
+}
+#sg{					/*Figura da sg*/
+	grid-area: sg;		/*Nome da área == 'sg'*/
+	margin-top: -8%;	/*Margem de -8% da altura total do topo*/
+}
+#stPrj{									/*Botão de conclusão*/
+	grid-area: bt;						/*Nome da área == 'bt'*/
+	height: 80%;						/*Define a altura como 80% do espaço total*/
+	width: 65%;							/*Define a altura como 65% do espaço total*/
+	opacity: 0.4;						/*40% de opacidade*/
+	border-color: #000;					/*Borda preta*/
+	border-width: 30%;					/*Define a expessura da borda com 30% do tamhano total*/
+	background: #FFA;					/*#FFFFAA como cor de fundo*/
+	font-family: "Railway to Hells";	/*Fonte 'Railway to Hells'*/
+	font-size: 28px;					/*Fonte tamanho 28*/
+}
+#stPrj:hover{						/*Se passar o mouse sobre o stPrj*/
+	animation-name: hoverButton;	/*Executa a animação 'hoverButton'...*/
+	animation-duration: 0.5s;		/*...por 0.5 segundos...*/
+	animation-fill-mode: forwards;	/*...e mantém as alterações após a execução*/
+}
+
+
+/*Aside CSS*/
+aside{						/*Barra lateral*/
+	background: #232531;	/*#232531 como cor de fundo*/
+	height: 94%;			/*Define a altura como 94% do espaço total*/
+	width: 87%;				/*Define a largura como 87% do espaço total*/
+	grid-area: a;			/*Nome da área == 'a'*/
+	justify-self: right;	/*Se alinha à direita (abscissas)*/
+	align-self: center;		/*Se alinha ao centro (ordenadas)*/
+	margin-right: 4%;		/*Margem de 4% da largura total da direita*/
+	margin-top: -12%;		/*Margem de -12% da altura total do topo*/
+	border-radius: 2%;		/*Arredondamento da borda em 2%*/
+	color: #888;			/*Texto em #888888*/
+}
+aside:hover{						/*Se passar o mouse sobre o aside*/
+	animation-name: apearItem;		/*Executa a animação 'apearItem'...*/
+	animation-duration: 1s;			/*...por 1 segundo...*/
+	animation-fill-mode: forwards;	/*...e mantém as alterações após a execução*/
+}
+#asTitle{								/*Título da guitarra selecionada*/
+	font-family: "Railway to Hells";	/*Fonte 'Railway to Hells'*/
+	font-size: 28px;					/*Fonte tamanho 28*/
+	text-align: center;					/*Alinhamento do texto ao centro*/
+	margin-top: 2%;						/*Margem de 2% da altura total do topo*/
+}
+#asSubtitle{				/*Tópicos da guitarra*/
+	font-family: "Roboto";	/*Fonte 'Roboto'*/
+	font-size: 18px;		/*Fonte tamanho 18*/
+	text-align: left;		/*Alinhamento do texto à esquerda*/
+	margin-top: 2%;			/*Margem de 2% da altura total do topo*/
+	margin-left: 4%;		/*Margem de 4% da largura total da esquerda*/
+}
+#asTopic{					/*Textos da guitarra*/
+	font-family: "Roboto";	/*Fonte 'Roboto'*/
+	font-size: 14px;		/*Fonte tamanho 18*/
+	text-align: left;		/*Alinhamento do texto à esquerda*/
+	margin-left: 6%;		/*Margem de 6% da largura total da esquerda*/
+	width: 90%;				/*Define a largura como 90% do espaço total*/
+}
+
+
+/*Footer CSS*/
+footer{						/*Rodapé*/
+	background: #232531;	/*#232531 como cor de fundo*/
+	color: #888;			/*Texto em #888888*/
+	height: 95%;			/*Define a altura como 95% do espaço total*/
+	width: 99%;				/*Define a largura como 99% do espaço total*/
+	justify-self: center;	/*Se alinha à direita (abscissas)*/
+	grid-area: f;			/*Nome da área == 'f'*/
+}
+footer:hover{						/*Se passar o mouse sobre o rodapé*/
+	animation-name: apearItem;		/*Executa a animação 'apearItem'...*/
+	animation-duration: 1s;			/*...por 2 segundos...*/
+	animation-fill-mode: forwards;	/*...e mantém as alterações após a execução*/
+}
+#footerText{				/*Texto do rodapé*/
+	font-family: "Roboto";	/*Fonte 'Roboto'*/
+	font-size: 16px;		/*Fonte tmanho 16*/
+	text-align: left;		/*Alinhamento do texto à esquerda*/
+	margin-left: 2%;		/*Margem de 2% da largura total da esquerda*/
+}
+
+
+/*KeyFrames CSS*/
+@keyframes apearHeader{									/*Animação 'apearHeader'*/
+	from{												/*Parta de:*/
+		opacity: 0.75;									/*75% de opacidade*/
+		background-image: url("Images/Body/hdr.png");	/*Imagem de fundo png*/
+	}
+	to{													/*Para:*/
+		opacity: 1;										/*100% de opacidade*/
+		background-image: url("Images/Body/hdr-o.jpg");	/*Mesma imagem de fundo jpg*/
+	}
+}
+@keyframes apearMain{			/*Animação 'apearMain'*/
+	from{						/*Parta de:*/
+		opacity: 0.9;			/*90% de opacidade*/
+		background: #232531;	/*#232531 como cor de fundo*/
+	}
+	to{							/*Para:*/
+		opacity: 1;				/*100% de opacidade*/
+		background: #333541;	/*#333541 como cor de fundo*/
+	}
+}
+@keyframes apearItem{			/*Animação 'apearMain'*/
+	from{						/*Parta de:*/
+		opacity: 0.9;			/*90% de opacidade*/
+		background: #232531;	/*#232531 como cor de fundo*/
+		color: #888;			/*Texto em #888888*/
+	}
+	to{							/*Para:*/
+		opacity: 1;				/*100% de opacidade*/
+		background: #333541;	/*#333541 como cor de fundo*/
+		color: #FFF;			/*Texto branco*/
+	}
+}
+@keyframes hoverButton{		/*Animação 'hoverButton'*/
+	from{					/*Parta de:*/
+		opacity: 0.75;		/*75% de opacidade*/
+		background: #FF2;	/*#FFFF22 como cor de fundo*/
+	}
+	to{						/*Para:*/
+		opacity: 1;			/*100% de opacidade*/
+		background: #FF0;	/*#FFFF00 como cor de fundo*/
+	}
+} 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br"><!-- Linguagem Portugues brasileiro -->
+	<head>
+		<meta charset="UTF-8"/><!-- Tabela de caracteres UTF-8 -->
+		<title>&maltese; EletricGuitarMaker &maltese;</title><!-- Nome: (✠ EletricGuitarMaker ✠) -->
+		<link rel="icon" href="SubSites/Imgs/lg.png" type="image/png"><!-- Ícone da aba -->
+		<link rel="stylesheet" type="text/css" href="dsgn.css"><!-- Arquivo CSS3 -->
+	</head>
+	<body>
+		<div class="cnt"><!-- Div que ocupa todo o corpo do site -->
+			<header><h1>[Eletric guitar makeR]</h1></header><!-- Cabeçalho -->
+			<main><!-- Parte principal do site -->
+				<h2>Monte Sua Guitarra!</h2><!-- Título do main -->
+				<figure id="st" onclick="sel(1);"><!-- Área da imagem do modelo [ativa a função sel(1)] -->
+					<figcaption><!-- Área de nomeação do modelo -->
+						<p><b>StratocasteR</b></p><!-- Nome do modelo em negrito (Stratocaster) -->
+					</figcaption>
+					<img src="Images/Body/strato-v.png"><!-- Silhueta com a imagem da Stratocaster -->
+				</figure>
+				<figure id="lp" onclick="sel(2);"><!-- Área da imagem do modelo [ativa a função sel(2)] -->
+					<figcaption><!-- Área de nomeação do modelo -->
+						<p><b>Les pauL</b></p><!-- Nome do modelo em negrito (Les Paul) -->
+					</figcaption>
+					<img src="Images/Body/lespaul-v.png"><!-- Silhueta com a imagem da Les Paul -->
+				</figure>
+				<figure id="tl" onclick="sel(3);"><!-- Área da imagem do modelo [ativa a função sel(3)] -->
+					<figcaption><!-- Área de nomeação do modelo -->
+						<p><b>TelecasteR</b></p><!-- Nome do modelo em negrito (Telecaster) -->
+					</figcaption>
+					<img src="Images/Body/telecaster-v.png"><!-- Silhueta com a imagem da Telecaster -->
+				</figure>
+				<figure id="sg" onclick="sel(4);"><!-- Área da imagem do modelo [ativa a função sel(4)] -->
+					<figcaption><!-- Área de nomeação do modelo -->
+						<p><b>Solid guitaR</b></p><!-- Nome do modelo em negrito (Solid Guitar) -->
+					</figcaption>
+					<img src="Images/Body/sg-v.png"><!-- Silhueta com a imagem da SG -->
+				</figure>
+				<button id="stPrj" onclick="startProject(selectGuitar);">[Iniciar projetO]</button>
+				<!-- Botão de redirecionamento (vai para o site da guitarra selecionada) -->
+			</main>
+			<aside id="information"></aside><!-- Barra lateral -->
+			<footer><!-- Rodapé -->
+				<p id="footerText"><!-- Informações do rodapé -->
+					CNPJ: Nenhum (porque isso é um trabalho de aula)<br/>
+					Localização: Minha Área de Trabalho<br/>
+					Email: marcobee.info@gmail.com<br/>
+					Nenhum direito reservado&copy; (site não tem carteira de trabalho)<br/>
+					Power by: Minha força de vontade, Projeto de Física e Arduíno do IFC, Wall-e Store.
+				</p>
+			</footer>
+			<script type="text/javascript" src="brain.js"></script><!-- JavaScript -->
+		</div>
+	</body>
+</html>
