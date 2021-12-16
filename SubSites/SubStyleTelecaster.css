@@ -1,0 +1,363 @@
+/*Reset html&body CSS*/
+html,body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #131521;
+}
+
+/*Div Container CSS*/
+.cnt{
+	display: grid;
+	grid-template: 28vh 250vh 21vh / 2fr 1fr;
+	grid-template-areas:
+	"h h"
+	"m a"
+	"f f";
+}
+
+/*Header CSS*/
+header{
+	align-self: top;
+	justify-self: center;
+	opacity: 0.75;
+	align-items: center;
+	background-image: url("Imgs/hdr.png");
+	background-position: 50% -68%;
+	height: 95%;
+	width: 99.5%;
+	grid-area: h;
+	text-shadow: #000 0px 0px;
+}
+h1{
+	text-align: center;
+	margin-top: 2%;
+	color: #000;
+	font-size: 58px;
+	font-family: "Railway to Hells";
+}
+header:hover{
+	animation-name: apearHeader;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+/*Main CSS*/
+main{
+	background: url("Imgs/Telecaster/MuddyTelecaster.png");
+	background-size: 115%;
+	height: 84%;
+	grid-area: m;
+	width: 88%;
+	border-radius: 1%;
+	margin-left: 2%;
+	margin-top: 2%;
+	color: #000;
+	font-family: "Railway to Hells";
+	font-size: 22px;
+	display: grid;
+	grid-template: 9.5% 90% 0.5%/ 1f 1fr 1fr;
+	grid-template-areas:
+	"mg mg"
+	". ."
+	"bt bt";
+	text-align: center;
+	justify-items: center;
+}
+main:hover{
+	animation-name: apearMain;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+h2{
+	text-align: center;
+	color: #FFF;
+	font-family: "Railway to Hells";
+	font-size: 36px;
+	grid-area: mg;
+}
+button{
+	grid-area: bt;
+	width: 55%;
+	height: 40%;
+	border-color: #000;
+	border-width: 30%;
+	background: #FF3;
+	font-family: "Railway to Hells";
+	font-size: 28px;
+	margin-top: 26%;
+}
+button:hover{
+	animation-name: hoverButton;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+#guitarPriceDiv{
+	background: #FFF;
+	font-family: "Roboto";
+	text-align: left;
+	padding: 4%;
+	border-radius: 2%;
+	opacity: 0.2;
+	height: 82vh;
+	width: 34vw;
+	margin-top: -28%;
+	margin-left: 2%;
+}
+#guitarPriceDiv:hover{
+	animation-name: apearPrice;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+#guitarPriceH4{
+	font-size: 22px;
+	text-align: center;
+}
+#guitarPriceP{
+	font-size: 18px;
+}
+
+
+
+/*Aside CSS*/
+aside{
+	background: #232531;
+	height: 94%;
+	width: 115%;
+	grid-area: a;
+	justify-self: right;
+	align-self: center;
+	margin-right: 3%;
+	margin-top: -13.5%;
+	border-radius: 0.4%;
+}
+aside:hover{
+	animation-name: apearItem;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+.textBlock{
+	margin-left: -5%;
+	margin-top: -10%;
+}
+.bdColor,.description{display: inline;}
+.bdColor{border-radius: 20%;}
+#rwDiv{background: #583827;}
+#blueDiv{background: #23F;}
+#whDiv{background: #FCFCFC;}
+#yeDiv{background: #ECDD13;}
+#chDiv{background: #960000;}
+#sb1Div{background-image: radial-gradient(circle, yellow, yellow, orange, red, black, black);}
+#sb2Div{background-image: radial-gradient(circle, yellow, yellow, orange, red, red);}
+#redDiv{background: #E60000;}
+#bkDiv{background: #080808;}
+#svDiv{background: #989898;}
+#gdDiv{background: #D4AF37;}
+figcaption{margin-bottom: 15px;}
+
+#alderDiv{background: rgb(231,182,141);}
+#ashDiv{background: rgb(209,182,155);}
+#bassDiv{background: rgb(255,202,140);}
+#cdrsDiv{background: rgb(182,115,70);}
+#frDiv{background: rgb(176,130,73);}
+#imDiv{background: rgb(68,37,22);}
+#ipeDiv{background: rgb(108,79,48);}
+#jtbDiv{background: rgb(121,55,22);}
+#mpDiv{background: rgb(203,183,136);}
+#mgDiv{background: rgb(132,67,37);}
+#pfDiv{background: rgb(85,64,65);}
+#pmDiv{background: rgb(212,188,124);}
+#rxDiv{background: rgb(148,32,56);}
+#trDiv{background: rgb(199,144,94);}
+#angDiv{background: rgb(203,185,128);}
+#balDiv{background: rgb(197,105,56);}
+#ebanDiv{
+	background-image: repeating-linear-gradient(90deg, 
+		rgb(69,44,28),rgb(20,20,20),
+		rgb(69,44,28),rgb(20,20,20),
+		rgb(69,44,28),rgb(20,20,20),
+		rgb(69,44,28),rgb(20,20,20),
+		rgb(69,44,28));
+}
+#goiDiv{background: rgb(202,143,81);}
+#greDiv{background: rgb(222,180,113);}
+#jcDiv{background: rgb(196,126,94);}
+#jcvDiv{background: rgb(130,88,83);}
+#mplDiv{background: rgb(245,224,197);}
+#tsDiv{background: url("Imgs/ts.png");}
+/*Result0 ==> Body Wood*/
+#Result00{cursor: pointer;}
+#Result01{cursor: pointer;}
+#Result02{cursor: pointer;}
+#Result03{cursor: pointer;}
+#Result04{cursor: pointer;}
+#Result05{cursor: pointer;}
+#Result06{cursor: pointer;}
+#Result07{cursor: pointer;}
+#Result08{cursor: pointer;}
+#Result09{cursor: pointer;}
+#Result0A{cursor: pointer;}
+#Result0B{cursor: pointer;}
+#Result0C{cursor: pointer;}
+#Result0D{cursor: pointer;}
+/*Result1 ==> Body Color*/
+#Result10{cursor: pointer;}
+#Result11{cursor: pointer;}
+#Result12{cursor: pointer;}
+#Result13{cursor: pointer;}
+#Result14{cursor: pointer;}
+#Result15{cursor: pointer;}
+#Result16{cursor: pointer;}
+#Result17{cursor: pointer;}
+#Result18{cursor: pointer;}
+#Result19{cursor: pointer;}
+#Result1A{cursor: pointer;}
+#Result20,#Result21,
+#Result50,#Result51,#Result52,#Result53,#Result54,#Result55,#Result56,#Result57,#Result58,
+#Result60,#Result61,
+#Result80,#Result81{
+	margin-left: 5%;
+	margin-top: 0%;
+	font-size: 16px;
+	cursor: pointer;
+	width: 75%;
+}
+#Result30{cursor: pointer;}
+#Result31{cursor: pointer;}
+#Result32{cursor: pointer;}
+#Result33{cursor: pointer;}
+#Result34{cursor: pointer;}
+#Result35{cursor: pointer;}
+#Result36{cursor: pointer;}
+#Result37{cursor: pointer;}
+#Result38{cursor: pointer;}
+#Result39{cursor: pointer;}
+#Result40{cursor: pointer;}
+#Result41{cursor: pointer;}
+#Result42{cursor: pointer;}
+#Result43{cursor: pointer;}
+#Result44{cursor: pointer;}
+#Result45{cursor: pointer;}
+#Result46{cursor: pointer;}
+#Result47{cursor: pointer;}
+#Result48{cursor: pointer;}
+#Result70{cursor: pointer;}
+#Result71{cursor: pointer;}
+#Result72{cursor: pointer;}
+#Result73{cursor: pointer;}
+#Result74{cursor: pointer;}
+#Result75{cursor: pointer;}
+#Result76{cursor: pointer;}
+#Result77{cursor: pointer;}
+
+
+
+.wrapper{
+	max-width: 92%;
+    margin: 0 auto;
+    margin-top: 8%;
+}
+.itemList{
+    background: #434551;
+    border-radius: 1%;
+    margin-bottom: 5%;
+    padding: 5px;
+    width: 98%;
+}
+.titleBlock{
+	text-align: left;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    font-family: "Aller";
+    color: #FFF;
+}
+.titleBlock::after{
+	font-family: monospace;
+	content: '+';
+	float: right;
+	transition: transform 0.4s ease;
+}
+.textBlock{
+	padding: 10px;
+	color: #EEE;
+	font-family: "Roboto";
+	font-size: 16px;
+	display: none;
+}
+.inputTrigger{display: none;}
+.inputTrigger:checked ~ .wrapperTrigger .textBlock{display: block;}
+.inputTrigger:checked ~ .wrapperTrigger .titleBlock::after {transform: rotate(-45deg);}
+
+
+/*Footer CSS*/
+footer{
+	background: #232531;
+	height: 95%;
+	width: 99%;
+	justify-self: center;
+	grid-area: f;
+}
+footer:hover{
+	animation-name: apearItem;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+#footerText{
+	color: #FFF;
+	font-family: "Roboto";
+	font-size: 16px;
+	text-align: left;
+	margin-left: 2%;
+}
+
+
+/*KeyFrames CSS*/
+@keyframes apearHeader{
+	from{
+		opacity: 0.9;
+		background-image: url("Imgs/hdr.png");
+	}
+	to{
+		opacity: 1;
+		background-image: url("Imgs/hdr-o.jpg");
+	}
+}
+@keyframes apearMain{
+	from{
+		opacity: 0.75;
+		background-image: url("Imgs/Telecaster/MuddyTelecaster.png");
+	}
+	to{
+		opacity: 1;
+		background-image: url("Imgs/Telecaster/MuddyTelecaster-o.jpg");
+	}
+}
+@keyframes apearPrice{
+	from{
+		opacity: 0.2;
+	}
+	to{
+		opacity: 0.8;
+	}
+}
+@keyframes apearItem{
+	from{
+		opacity: 0.9;
+		background: #232531;
+	}
+	to{
+		opacity: 1;
+		background: #333541;
+	}
+}
+@keyframes hoverButton{
+	from{
+		opacity: 0.9;
+		background: #FF2;
+	}
+	to{
+		opacity: 1;
+		background: #FF0;
+	}
+}

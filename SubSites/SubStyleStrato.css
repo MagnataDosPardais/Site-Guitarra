@@ -1,0 +1,391 @@
+/*Reset html&body CSS*/
+html,body{						/*Aplicar em toda a estrutura*/
+	margin: 0;					/*Nenhuma margem*/
+	padding: 0;					/*Nenhum espaçamento*/
+	box-sizing: border-box;		/*Inclui o preenchimento e a borda na largura e na altura*/
+	background: #131521;		/*#131521 como cor de fundo*/
+}
+
+/*Div Container CSS*/
+.cnt{											/*Div do corpo*/
+	display: grid;								/*Tela em grade*/
+	grid-template: 28vh 250vh 21vh / 2fr 1fr;	/*Separação da grade*/
+	grid-template-areas:
+	"h h"
+	"m a"
+	"f f";
+	/*
+	_________________________
+	|       Cabeçalho       |
+	|-----------------------|
+	|     Main      | Aside |
+	|-----------------------|
+	|         Rodapé        |
+	=========================
+	*/
+
+}
+
+/*Header CSS*/
+header{
+	align-self: top;								/*Se alinha ao topo (ordenadas)*/
+	justify-self: center;							/*Se alinha ao centro (abscissas)*/
+	opacity: 0.75;									/*75% de opacidade*/
+	align-items: center;							/*Alinhar elementos internos ao centro (ordenadas)*/
+	background-image: url("Images/hdr.png");		/*Coloca uma imagem de fundo*/
+	background-position: 50% -68%;					/*Desloca a imagem de fundo*/
+	height: 95%;									/*Define a altura como 95% do espaço total*/
+	width: 99.5%;									/*Define a largura como 99.5% do espaço total*/
+	grid-area: h;									/*Nome da área == 'h'*/
+	text-shadow: #000 0px 0px;						/*Nenhuma sombra do texto*/
+}
+header:hover{						/*Se passar o mouse sobre o cabeçalho*/
+	animation-name: apearHeader;	/*Executa a animação 'apearHeader'...*/
+	animation-duration: 2s;			/*...por 2 segundos...*/
+	animation-fill-mode: forwards;	/*...e mantém as alterações após a execução*/
+}
+h1{										/*Texto de 1ª hierarquia*/
+	text-align: center;					/*Alinhamento do texto ao centro*/
+	margin-top: 2%;						/*Margem de 2% da altura total do topo*/
+	color: #000;						/*Texto preto*/
+	font-size: 58px;					/*Fonte tamanho 58*/
+	font-family: "Railway to Hells";	/*Fonte 'Railway to Hells'*/
+}
+
+/*Main CSS*/
+main{												/*Parte principal*/
+	background: url("Imgs/Strato/EricStrato.png");	/*Coloca uma imagem de fundo*/
+	background-size: 117%;							/*Aumenta em imagem de 17%*/
+	height: 84%;									/*Define a altura como 84% do espaço total*/
+	width: 88%;										/*Define a largura como 88% do espaço total*/
+	grid-area: m;									/*Nome da área == 'm'*/
+	border-radius: 1%;								/*Arredondamento da borda em 1%*/
+	margin-left: 2%;								/*Margem de 2% da largura total da esquerda*/
+	margin-top: 2%;									/*Margem de 2% da altura total do topo*/
+	color: #000;									/*Texto preto*/
+	font-family: "Railway to Hells";				/*Fonte 'Railway to Hells'*/
+	font-size: 22px;								/*Fonte tamanho 22*/
+	display: grid;									/*Tela em grade*/
+	grid-template: 9.5% 90% 0.5%/ 1f 1fr 1fr;		/*Separação da grade*/
+	grid-template-areas:
+	"mg mg"
+	". ."
+	"bt bt";
+/*
+	_________________________
+	|         Título        |
+	|-----------------------|
+	|                       |
+	|                       |
+	|                       |
+	|-----------------------|
+	|         Botão         |
+	=========================
+	*/
+	text-align: center;								/*Alinhamento do texto ao centro*/
+	justify-items: center;							/*Alinhar elementos internos ao centro (abscissas)*/
+}
+main:hover{							/*Se passar o mouse sobre o main*/
+	animation-name: apearMain;		/*Executa a animação 'apearMain'...*/
+	animation-duration: 1s;			/*...por 1 segundo...*/
+	animation-fill-mode: forwards;	/*...e mantém as alterações após a execução*/
+}
+h2{
+	text-align: center;					/*Alinhamento do texto ao centro*/
+	color: #000;						/*Texto preto*/
+	font-family: "Railway to Hells";	/*Fonte 'Railway to Hells'*/
+	font-size: 36px;					/*Fonte tamanho 36*/
+	grid-area: mg;						/*Nome da área == 'mg'*/
+}
+button{
+	grid-area: bt;						/*Nome da área == 'bt'*/
+	height: 40%;						/*Define a altura como 40% do espaço total*/
+	width: 55%;							/*Define a largura como 55% do espaço total*/
+	border-color: #000;					/*Borda preta*/
+	border-width: 30%;					/*Define a expessura da borda com 30% do tamhano total*/
+	background: #FF3;					/*#FFFFAA como cor de fundo*/
+	font-family: "Railway to Hells";	/*Fonte 'Railway to Hells'*/
+	font-size: 28px;					/*Fonte tamanho 28*/
+	margin-top: 26%;					/*Margem de 26% da altura total do topo*/
+}
+button:hover{						/*Se passar o mouse sobre o button*/
+	animation-name: hoverButton;	/*Executa a animação 'hoverButton'...*/
+	animation-duration: 0.5s;		/*...por 0.5 segundos...*/
+	animation-fill-mode: forwards;	/*...e mantém as alterações após a execução*/
+}
+#guitarPriceDiv{			/*Boleto*/
+	background: #FFF;		/*Branco como cor de fundo*/
+	font-family: "Roboto";	/*Fonte 'Roboto'*/
+	text-align: left;		/*Alinhamento do texto à esquerda*/
+	padding: 4%;			/*4% do tamanho total de espaçamento*/
+	border-radius: 2%;		/*Arredondamento da borda em 2%*/
+	opacity: 0.2;			/*20% de opacidade*/
+	height: 82vh;			/*Define a altura como 82/100 da altura total*/
+	width: 34vw;			/*Define a largura como 82/100 da largura total*/
+	margin-top: -30%;		/*Margem de -30% da altura total do topo*/
+	margin-left: 8%;		/*Margem de 8% da largura total da esquerda*/
+}
+#guitarPriceDiv:hover{				/*Se passar o mouse sobre o guitarPriceDiv*/
+	animation-name: apearPrice;		/*Executa a animação 'apearPrice'...*/
+	animation-duration: 0.3s;		/*...por 0.3 segundos...*/
+	animation-fill-mode: forwards;	/*...e mantém as alterações após a execução*/
+}
+#guitarPriceH4{			/*Título do boleto*/
+	font-size: 22px;	/*Fonte tamanho 22*/
+	text-align: center;	/*Alinhamento do texto ao centro*/
+}
+#guitarPriceP{			/*Tópicos do boleto*/
+	font-size: 18px;	/*Fonte tamanho 22*/
+}
+
+
+/*Aside CSS*/
+aside{						/*Barra lateral*/
+	background: #232531;	/*#232531 como cor de fundo*/
+	height: 94%;			/*Define a altura como 94% do espaço total*/
+	width: 115%;			/*Define a largura como 115% do espaço total*/
+	grid-area: a;			/*Nome da área == 'a'*/
+	justify-self: right;	/*Se alinha à direita (abscissas)*/
+	align-self: center;		/*Se alinha ao centro (ordenadas)*/
+	margin-right: 3%;		/*Margem de 3% da largura total da direita*/
+	margin-top: -13.5%;		/*Margem de -13.5% da altura total do topo*/
+	border-radius: 0.4%;	/*Arredondamento da borda em 0.4%*/
+}
+aside:hover{						/*Se passar o mouse sobre o aside*/
+	animation-name: apearItem;		/*Executa a animação 'apearItem'...*/
+	animation-duration: 1s;			/*...por 1 segundo...*/
+	animation-fill-mode: forwards;	/*...e mantém as alterações após a execução*/
+}
+.textBlock{				/*Selecionável*/
+	margin-left: -5%;	/*Margem de -5% da largura total da esquerda*/
+	margin-top: -10%;	/*Margem de -10% da altura total do topo*/
+}
+.bdColor,.description{display: inline;}	/*Cor do selecionável, Nome do selecionável*/
+.bdColor{border-radius: 20%;}			/*Cor do selecionável: Arredondamento da borda em 20%*/
+/*Pintura das divs*/
+#rwDiv{background: #583827;}
+#blueDiv{background: #23F;}
+#whDiv{background: #FCFCFC;}
+#yeDiv{background: #ECDD13;}
+#chDiv{background: #960000;}
+#sb1Div{background-image: radial-gradient(circle, yellow, yellow, orange, red, black, black);}
+#sb2Div{background-image: radial-gradient(circle, yellow, yellow, orange, red, red);}
+#redDiv{background: #E60000;}
+#bkDiv{background: #080808;}
+#svDiv{background: #989898;}
+#gdDiv{background: #D4AF37;}
+#alderDiv{background: rgb(231,182,141);}
+#ashDiv{background: rgb(209,182,155);}
+#bassDiv{background: rgb(255,202,140);}
+#cdrsDiv{background: rgb(182,115,70);}
+#frDiv{background: rgb(176,130,73);}
+#imDiv{background: rgb(68,37,22);}
+#ipeDiv{background: rgb(108,79,48);}
+#jtbDiv{background: rgb(121,55,22);}
+#mpDiv{background: rgb(203,183,136);}
+#mgDiv{background: rgb(132,67,37);}
+#pfDiv{background: rgb(85,64,65);}
+#pmDiv{background: rgb(212,188,124);}
+#rxDiv{background: rgb(148,32,56);}
+#trDiv{background: rgb(199,144,94);}
+#angDiv{background: rgb(203,185,128);}
+#balDiv{background: rgb(197,105,56);}
+#ebanDiv{
+	background-image: repeating-linear-gradient(90deg, 
+		rgb(69,44,28),rgb(20,20,20),
+		rgb(69,44,28),rgb(20,20,20),
+		rgb(69,44,28),rgb(20,20,20),
+		rgb(69,44,28),rgb(20,20,20),
+		rgb(69,44,28)
+	);
+}
+#goiDiv{background: rgb(202,143,81);}
+#greDiv{background: rgb(222,180,113);}
+#jcDiv{background: rgb(196,126,94);}
+#jcvDiv{background: rgb(130,88,83);}
+#mplDiv{background: rgb(245,224,197);}
+#tsDiv{background: url("Imgs/ts.png");}
+/*Declara que todas figures terão o cursor 'pointer'
+[dava para simplificar, mas eu só notei na documentação]*/
+/*Result0 ==> Madeira do corpo*/
+#Result00{cursor: pointer;}
+#Result01{cursor: pointer;}
+#Result02{cursor: pointer;}
+#Result03{cursor: pointer;}
+#Result04{cursor: pointer;}
+#Result05{cursor: pointer;}
+#Result06{cursor: pointer;}
+#Result07{cursor: pointer;}
+#Result08{cursor: pointer;}
+#Result09{cursor: pointer;}
+#Result0A{cursor: pointer;}
+#Result0B{cursor: pointer;}
+#Result0C{cursor: pointer;}
+#Result0D{cursor: pointer;}
+/*Result1 ==> Cor do corpo*/
+#Result10{cursor: pointer;}
+#Result11{cursor: pointer;}
+#Result12{cursor: pointer;}
+#Result13{cursor: pointer;}
+#Result14{cursor: pointer;}
+#Result15{cursor: pointer;}
+#Result16{cursor: pointer;}
+#Result17{cursor: pointer;}
+#Result18{cursor: pointer;}
+#Result19{cursor: pointer;}
+#Result1A{cursor: pointer;}
+/*Result2 ==> Verniz*/
+/*Result5 ==> MArcador da escala*/
+/*Result6 ==> Captadores*/
+/*Result8 ==> Ponte*/
+#Result20,#Result21,
+#Result50,#Result51,#Result52,#Result53,#Result54,#Result55,#Result56,#Result57,#Result58,
+#Result60,#Result61,#Result62,#Result63,
+#Result80,#Result81{
+	margin-left: 5%;	/*Margem de 5% da largura total da esquerda*/
+	margin-top: 0%;		/*Nenhuma margem no topo*/
+	font-size: 16px;	/*Fonte tamanho 16*/
+	cursor: pointer;	/*Declara que o cursor será 'pointer'*/
+	width: 75%;			/*Define a largura como 75% do espaço total*/
+}
+#Result30{cursor: pointer;}
+#Result31{cursor: pointer;}
+#Result32{cursor: pointer;}
+#Result33{cursor: pointer;}
+#Result34{cursor: pointer;}
+#Result35{cursor: pointer;}
+#Result36{cursor: pointer;}
+#Result37{cursor: pointer;}
+#Result38{cursor: pointer;}
+#Result39{cursor: pointer;}
+#Result40{cursor: pointer;}
+#Result41{cursor: pointer;}
+#Result42{cursor: pointer;}
+#Result43{cursor: pointer;}
+#Result44{cursor: pointer;}
+#Result45{cursor: pointer;}
+#Result46{cursor: pointer;}
+#Result47{cursor: pointer;}
+#Result48{cursor: pointer;}
+#Result70{cursor: pointer;}
+#Result71{cursor: pointer;}
+#Result72{cursor: pointer;}
+#Result73{cursor: pointer;}
+#Result74{cursor: pointer;}
+#Result75{cursor: pointer;}
+#Result76{cursor: pointer;}
+#Result77{cursor: pointer;}
+figcaption{margin-bottom: 15px;}	/*Margem de 15 pixels da altura total da base*/
+
+
+.wrapper{			/*Área dos itens*/
+	max-width: 92%;	/*Define a largura máxima como 92% do espaço total*/
+	margin: 0 auto;	/*Margens laterais automáticas*/
+	margin-top: 8%;	/*Margem de 8% da altura total do topo*/
+}
+.itemList{					/*Itens*/
+	background: #434551;	/*#434551 como cor de fundo*/
+	border-radius: 1%;		/*Arredondamento da borda em 1%*/
+	margin-bottom: 5%;		/*Margem de 5% da altura total da base*/
+	padding: 5px;			/*Espaçamento de 5 pixels*/
+	width: 98%;				/*Define a largura como 98% do espaço total*/
+}
+.titleBlock{				/*Nome do item*/
+	text-align: left;		/*Alinhamento do texto à esquerda*/
+	cursor: pointer;		/*Declara que o cursor será 'pointer'*/
+	padding: 10px;			/*Espaçamento de 10 pixels*/
+	font-size: 24px;		/*Fonte tamanho 24*/
+	font-family: "Aller";	/*Fonte 'Aller'*/
+	color: #FFF;			/*Texto branco*/
+}
+.titleBlock::after{						/*Após o nome do item*/
+	font-family: monospace;				/*Fonte monoespaçada*/
+	content: '+';						/*Adiciona '+'*/
+	float: right;						/*Posicionar à direita do bloco*/
+	transition: transform 0.4s ease;	/*Transição de 0.4 segundos*/
+}
+.textBlock{					/*Div das figures*/
+	padding: 10px;			/*Espaçamento de 10 pixels*/
+	color: #EEE;			/*Texto em #EEEEEE*/
+	font-family: "Roboto";	/*Fonte 'Roboto'*/
+	font-size: 16px;		/*Fonte tamanho 24*/
+	display: none;			/*Oculta o elemento*/
+}
+.inputTrigger{display: none;}	/*Input (que ativa a abertura): Oculta o elemento*/
+.inputTrigger:checked ~ .wrapperTrigger .textBlock{display: block;}
+/*Se o input for checado: Desoculta a div das figures*/
+.inputTrigger:checked ~ .wrapperTrigger .titleBlock::after {transform: rotate(-45deg);}
+/*Se o input for checado: Rotaciona o content em -45°*/
+
+
+/*Footer CSS*/
+footer{						/*Rodapé*/
+	background: #232531;	/*#232531 como cor de fundo*/
+	height: 95%;			/*Define a altura como 95% do espaço total*/
+	width: 99%;				/*Define a largura como 99% do espaço total*/
+	justify-self: center;	/*Se alinha ao centro (abscissas)*/
+	grid-area: f;			/*Nome da área == 'f'*/
+}
+footer:hover{						/*Se passar o mouse sobre o footer*/
+	animation-name: apearItem;		/*Executa a animação 'apearItem'...*/
+	animation-duration: 1s;			/*...por 1 segundo...*/
+	animation-fill-mode: forwards;	/*...e mantém as alterações após a execução*/
+}
+#footerText{				/*Texto do rodapé*/
+	color: #FFF;			/*Texto branco*/
+	font-family: "Roboto";	/*Fonte 'Roboto'*/
+	font-size: 16px;		/*Fonte tamanho 16*/
+	text-align: left;		/*Alinhamento do texto à esquerda*/
+	margin-left: 2%;		/*Margem de 2% da largura total da esquerda*/
+}
+
+
+/*KeyFrames CSS*/
+@keyframes apearHeader{								/*Animação 'apearHeader'*/
+	from{											/*Parta de:*/
+		opacity: 0.9;								/*90% de opacidade*/
+		background-image: url("Imgs/hdr.png");		/*Imagem de fundo png*/
+	}
+	to{												/*Para:*/
+		opacity: 1;									/*100% de opacidade*/
+		background-image: url("Imgs/hdr-o.jpg");	/*Mesma imagem de fundo jpg*/
+	}
+}
+@keyframes apearMain{											/*Animação 'apearHeader'*/
+	from{														/*Parta de:*/
+		opacity: 0.75;											/*75% de opacidade*/
+		background-image: url("Imgs/Strato/EricStrato.png");	/*Imagem de fundo png*/
+	}
+	to{															/*Para:*/
+		opacity: 1;												/*100% de opacidade*/
+		background-image: url("Imgs/Strato/EricStrato-o.jpg");	/*Mesma imagem de fundo jpg*/
+	}
+}
+@keyframes apearPrice{	/*Animação 'apearHeader'*/
+	from{				/*Parta de:*/
+		opacity: 0.2;	/*20% de opacidade*/
+	}
+	to{					/*Para:*/
+		opacity: 0.8;	/*80% de opacidade*/
+	}
+}
+@keyframes apearItem{			/*Animação 'apearItem'*/
+	from{						/*Parta de:*/
+		opacity: 0.9;			/*90% de opacidade*/
+		background: #232531;	/*#232531 como cor de fundo*/
+	}
+	to{							/*Para:*/
+		opacity: 1;				/*100% de opacidade*/
+		background: #333541;	/*#333541 como cor de fundo*/
+	}
+}
+@keyframes hoverButton{		/*Animação 'hoverButton'*/
+	from{					/*Parta de:*/
+		opacity: 0.9;		/*90% de opacidade*/
+		background: #FF2;	/*#FFFF22 como cor de fundo*/
+	}
+	to{						/*Para:*/
+		opacity: 1;			/*100% de opacidade*/
+		background: #FF0;	/*#FFFF00 como cor de fundo*/
+	}
+} 

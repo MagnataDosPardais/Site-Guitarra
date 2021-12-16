@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>&maltese; Telecaster</title>
+		<link rel="icon" href="Imgs/lg.png" type="image/png">
+		<link rel="stylesheet" type="text/css" href="SubStyleTelecaster.css">
+	</head>
+	<body>
+		<div class="cnt">
+			<header><h1>[Eletric guitar makeR]</h1></header>
+			<main>
+				<h2>Customize sua telecasteR</h2>
+				<div id="guitarPriceDiv">
+					<h4 id="guitarPriceH4">Boleto:</h4>
+					<p id="guitarPriceP">Peças + Mão de obra: R$390,00</p>
+					<p id="guitarPriceP">Madeira do corpo [...]: R$0,00</p>
+					<p id="guitarPriceP">Pintura do corpo [...]: R$0,00</p>
+					<p id="guitarPriceP">Verniz [...]: R$0,00</p>
+					<p id="guitarPriceP">Madeira do braço [...]: R$0,00</p>
+					<p id="guitarPriceP">Madeira da escala [...]: R$0,00</p>
+					<p id="guitarPriceP">Marcador da escala [...]: R$0,00</p>
+					<p id="guitarPriceP">Captador [...]: R$0,00</p>
+					<p id="guitarPriceP">Escudo [...]: R$0,00</p>
+					<p id="guitarPriceP">Ponte [...]: R$0,00</p>
+					<p id="guitarPriceP"><b>TOTAL: R$390,00</b></p>
+				</div>
+				<button onclick="updateCost(); buy();">[FinalizaR]</button>
+			</main>
+			<aside id="information">
+				<div class="wrapper">
+					<div class="itemList" id="Wr0">
+						<input class="inputTrigger" id="titleBlock-1" type="checkbox">
+						<div class="wrapperTrigger">
+							<label for="titleBlock-1">
+								<h2 class="titleBlock" id="bodyWood">- Madeira do corpo: ...</h2>
+							</label>
+							<div class="textBlock">
+								<figure id="Result00" onclick="selWood(1);">
+									<div class="bdColor" id="alderDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Alder</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result01" onclick="selWood(2);">
+									<div class="bdColor" id="ashDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Ash</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result02" onclick="selWood(3);">
+									<div class="bdColor" id="bassDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - BassWood</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result03" onclick="selWood(4);">
+									<div class="bdColor" id="cdrsDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Cedro-Rosa</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result04" onclick="selWood(5);">
+									<div class="bdColor" id="frDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Freijó</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result05" onclick="selWood(6);">
+									<div class="bdColor" id="imDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Imbuia</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result06" onclick="selWood(7);">
+									<div class="bdColor" id="ipeDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Ipê</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result07" onclick="selWood(8);">
+									<div class="bdColor" id="jtbDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Jatobá</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result08" onclick="selWood(9);">
+									<div class="bdColor" id="mpDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Marupá</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result09" onclick="selWood(10);">
+									<div class="bdColor" id="mgDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Mogno</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result0A" onclick="selWood(11);">
+									<div class="bdColor" id="pfDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Pau-Ferro</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result0B" onclick="selWood(12);">
+									<div class="bdColor" id="pmDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Pau-Marfim</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result0C" onclick="selWood(13);">
+									<div class="bdColor" id="rxDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Roxinho</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result0D" onclick="selWood(14);">
+									<div class="bdColor" id="trDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Tauari</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+					<div class="itemList" id="Wr1">
+						<input class="inputTrigger" id="titleBlock-2" type="checkbox">
+						<div class="wrapperTrigger">
+							<label for="titleBlock-2">
+								<h2 class="titleBlock" id="bodyColor">- Cor do corpo: ...</h2>
+							</label>
+							<div class="textBlock" id="Result">
+								<figure id="Result10" onclick="selBcolor(1)">
+									<div class="bdColor" id="rwDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Madeira crua</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result11" onclick="selBcolor(2)">
+									<div class="bdColor" id="yeDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Amarelo</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result12" onclick="selBcolor(3)">
+									<div class="bdColor" id="blueDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Azul</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result13" onclick="selBcolor(4)">
+									<div class="bdColor" id="whDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Branco</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result14" onclick="selBcolor(5)">
+									<div class="bdColor" id="chDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Cherry</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result15" onclick="selBcolor(6)">
+									<div class="bdColor" id="gdDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Dourado</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result16" onclick="selBcolor(7)">
+									<div class="bdColor" id="svDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Prata</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result17" onclick="selBcolor(8)">
+									<div class="bdColor" id="bkDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Preto</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result18" onclick="selBcolor(9)">
+									<div class="bdColor" id="sb1Div">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Sunburst1</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result19" onclick="selBcolor(10)">
+									<div class="bdColor" id="sb2Div">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Sunburst2</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result1A" onclick="selBcolor(11)">
+									<div class="bdColor" id="redDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Vermelho</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+					<div class="itemList" id="Wr2">
+						<input class="inputTrigger" id="titleBlock-3" type="checkbox">
+						<div class="wrapperTrigger">
+							<label for="titleBlock-3">
+								<h2 class="titleBlock" id="bodyVarnish">- Verniz: ...</h2>
+							</label>
+							<div class="textBlock" id="Result20" onclick="selVrn(1)">Sim</div>
+							<div class="textBlock" id="Result21" onclick="selVrn(2)">Não</div>
+						</div>
+					</div>
+					<div class="itemList" id="Wr3">
+						<input class="inputTrigger" id="titleBlock-4" type="checkbox">
+						<div class="wrapperTrigger">
+							<label for="titleBlock-4">
+								<h2 class="titleBlock" id="neckWood">- Madeira do braço: ...</h2>
+							</label>
+							<div class="textBlock" id="Result">
+								<figure id="Result30" onclick="selNeckWood(1)">
+									<div class="bdColor" id="angDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Angico</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result31" onclick="selNeckWood(2)">
+									<div class="bdColor" id="balDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Bálsamo</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result32" onclick="selNeckWood(3)">
+									<div class="bdColor" id="ebanDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Ébano</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result33" onclick="selNeckWood(4)">
+									<div class="bdColor" id="goiDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Goiabão</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result34" onclick="selNeckWood(5)">
+									<div class="bdColor" id="greDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Grevilea</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result35" onclick="selNeckWood(6)">
+									<div class="bdColor" id="imDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Imbuia</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result36" onclick="selNeckWood(7)">
+									<div class="bdColor" id="jcDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Jacarandá</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result37" onclick="selNeckWood(8)">
+									<div class="bdColor" id="jcvDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Jacarandá Violeta</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result38" onclick="selNeckWood(9)">
+									<div class="bdColor" id="mplDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Mapple</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure  id="Result39" onclick="selNeckWood(10)">
+									<div class="bdColor" id="pmDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Pau-Marfim</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+					<div class="itemList" id="Wr4">
+						<input class="inputTrigger" id="titleBlock-5" type="checkbox">
+						<div class="wrapperTrigger">
+							<label for="titleBlock-5">
+								<h2 class="titleBlock" id="scaleWood">- Madeira da escala: ...</h2>
+							</label>
+							<div class="textBlock" id="Result">
+								<figure id="Result40" onclick="selSclWood(1)">
+									<div class="bdColor" id="ebanDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Ébano</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result41" onclick="selSclWood(2)">
+									<div class="bdColor" id="imDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Imbuia</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result42" onclick="selSclWood(3)">
+									<div class="bdColor" id="ipeDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Ipê</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result43" onclick="selSclWood(4)">
+									<div class="bdColor" id="jcDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Jacarandá</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result44" onclick="selSclWood(5)">
+									<div class="bdColor" id="jcvDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Jacarandá Violeta</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result45" onclick="selSclWood(6)">
+									<div class="bdColor" id="mplDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Mapple</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result46" onclick="selSclWood(7)">
+									<div class="bdColor" id="pfDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Pau-Ferro</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result47" onclick="selSclWood(8)">
+									<div class="bdColor" id="pmDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Pau-Marfim</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result48" onclick="selSclWood(9)">
+									<div class="bdColor" id="rxDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Roxinho</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+					<div class="itemList" id="Wr5">
+						<input class="inputTrigger" id="titleBlock-6" type="checkbox">
+						<div class="wrapperTrigger">
+							<label for="titleBlock-6">
+								<h2 class="titleBlock" id="neckMarker">- Marcador da escala: ...</h2>
+							</label>
+							<div class="textBlock" id="Result50" onclick="selMarker(1)"> - Botão</div>
+							<div class="textBlock" id="Result51" onclick="selMarker(2)"> - Cruz (Tony Iommi)</div>
+							<div class="textBlock" id="Result52" onclick="selMarker(3)"> - Cruz de Malta</div>
+							<div class="textBlock" id="Result53" onclick="selMarker(4)"> - Dente de tubarão</div>
+							<div class="textBlock" id="Result54" onclick="selMarker(5)"> - Floral</div>
+							<div class="textBlock" id="Result55" onclick="selMarker(6)"> - Pássaro</div>
+							<div class="textBlock" id="Result56" onclick="selMarker(7)"> - Raio</div>
+							<div class="textBlock" id="Result57" onclick="selMarker(8)"> - Trapézio</div>
+						</div>
+					</div>
+					<div class="itemList" id="Wr6">
+						<input class="inputTrigger" id="titleBlock-7" type="checkbox">
+						<div class="wrapperTrigger">
+							<label for="titleBlock-7">
+								<h2 class="titleBlock" id="bodyCap">- Captadores: ...</h2>
+							</label>
+							<div class="textBlock" id="Result60" onclick="selCap(1)"> - S &nbsp;.&nbsp; S</div>
+							<div class="textBlock" id="Result61" onclick="selCap(2)"> - S S S</div>
+						</div>
+					</div>
+					<div class="itemList" id="Wr7">
+						<input class="inputTrigger" id="titleBlock-8" type="checkbox">
+						<div class="wrapperTrigger">
+							<label for="titleBlock-8">
+								<h2 class="titleBlock" id="shieldColor">- Cor do escudo: ...</h2>
+							</label>
+							<div class="textBlock" id="Result">
+								<figure id="Result70" onclick="selBshield(1)">
+									<div class="bdColor" id="rwDiv"></div>
+									<figcaption class="description"> - Sem escudo</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result71" onclick="selBshield(2)">
+									<div class="bdColor" id="blueDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Azul</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result72" onclick="selBshield(3)">
+									<div class="bdColor" id="whDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Branco</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result73" onclick="selBshield(4)">
+									<div class="bdColor" id="tsDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Casco de tartaruga</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result74" onclick="selBshield(5)">
+									<div class="bdColor" id="gdDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Dourado</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result75" onclick="selBshield(6)">
+									<div class="bdColor" id="svDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Prata</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result76" onclick="selBshield(7)">
+									<div class="bdColor" id="bkDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Preto</figcaption>
+								</figure>
+							</div>
+							<div class="textBlock" id="Result">
+								<figure id="Result77" onclick="selBshield(8)">
+									<div class="bdColor" id="redDiv">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+									<figcaption class="description"> - Vermelho</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+					<div class="itemList" id="Wr8">
+						<input class="inputTrigger" id="titleBlock-9" type="checkbox">
+						<div class="wrapperTrigger">
+							<label for="titleBlock-9">
+								<h2 class="titleBlock" id="bodyBridge">- Ponte: ...</h2>
+							</label>
+							<div class="textBlock" id="Result80" onclick="selBridge(1)"> - Fixa</div>
+							<div class="textBlock" id="Result81" onclick="selBridge(2)"> - Fixa (T-style)</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<footer>
+				<p id="footerText">
+					CNPJ: Nenhum (porque isso é um trabalho de aula)<br/>
+					Localização: Minha Área de Trabalho<br/>
+					Email: marcobee.info@gmail.com<br/>
+					Nenhum direito reservado&copy; (site não tem carteira de trabalho)<br/>
+					Power by: Minha força de vontade, Projeto de Física e Arduíno do IFC, Wall-e Store.
+				</p>
+			</footer>
+			<script type="text/javascript" src="brainTelecaster.js"></script>
+		</div>
+	</body>
+</html>
